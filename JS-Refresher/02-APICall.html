@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>API Call Demo</h1>
+
+    <button onclick="load()">Load News</button>
+
+    <ul id="news-list">
+
+    </ul>
+
+    <script>
+        function load() {
+            let list = document.querySelector("#news-list");
+            const URL = "https://newsapi.org/v2/top-headlines?country=in&apiKey=695e07af402f4b119f0703e9b19f4683";
+            let xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function() {
+                // console.log(this.readyState + "," + this.status);
+                if(this.readyState == 4 && this.status == 200) {
+                    let data = this.responseText;
+                    let parseData = JSON.parse(data);
+                    let articles = parseData.articles;
+                    for(let i = 0; i < articles.length; i++) {
+                        var li = document.createElement("li");
+                        li.innerText = articles[i].title;
+                        list.appendChild(li);
+                    }
+                }
+            }
+            xhttp.open("GET", URL);
+            xhttp.send();
+        }
+    </script>
+    
+</body>
+</html>

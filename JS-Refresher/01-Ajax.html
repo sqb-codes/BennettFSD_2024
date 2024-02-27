@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>AJAX</h1>
+
+    <button onclick="main()">Start Loading...</button>
+    
+    <script>
+        function cricket() {
+            setTimeout(function() {
+                console.log("Cricket API Loading...");
+            }, 1);
+        }
+        function weather() {
+            setTimeout(function() {
+                console.log("Weather API Loading...");
+                for(var i = 0; i < 10000000000; i++) {
+                    var z = i + 5;
+                }
+            },1000);
+        }
+        function stock() {
+            setTimeout(function() {
+                console.log("Stock Market API Loading...");
+            }, 100);
+        }
+        function main() {
+            cricket();
+            weather();
+            stock();
+        }
+    </script>
+</body>
+</html>

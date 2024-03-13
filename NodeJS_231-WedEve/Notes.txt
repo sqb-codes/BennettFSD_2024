@@ -1,0 +1,18 @@
+1. Create new project
+
+Either
+npm init
+
+Or
+npm init -y
+
+3 Types of modules
+- Built-in - http, fs
+- 3rd Party - express, nodemon, chalk, chai
+- User defined - defined by user
+
+
+Installing a 3rd Party module
+- npm install express
+- npm install express -g
+- npm install express --save

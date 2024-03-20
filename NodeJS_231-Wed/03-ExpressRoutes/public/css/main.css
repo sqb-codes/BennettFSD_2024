@@ -1,0 +1,36 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 1300px;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+}
+
+#header {
+    background-color: lightgray;
+    border-bottom: 1px solid red;
+    padding: 15px 0px;
+    margin-bottom: 30px;
+}
+
+.logo {
+    width: 25%;
+}
+
+#main-nav {
+    width: 50%;
+}
+
+#main-nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+}

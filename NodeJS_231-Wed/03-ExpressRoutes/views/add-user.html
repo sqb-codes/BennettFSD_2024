@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+<body>
+
+    <header id="header">
+        <div class="container">
+            <div class="row">
+                <div class="logo">
+                    <h1>My Online Shop</h1>
+                </div>
+                <nav id="main-nav">
+                    <ul>
+                        <li>
+                            <a href="/">Home</a>
+                        </li>
+                        <li>
+                            <a href="/users">Users</a>
+                        </li>
+                        <li>
+                            <a href="/add-user">Add User</a>
+                        </li>
+                        <li>
+                            <a href="/products">Products</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <h1>Add New User</h1>
+            <hr>
+            <form action="/users">
+                <table>
+                    <tr>
+                        <td>
+                            <label for="name">Enter username</label>
+                        </td>
+                        <td>
+                            <input type="text" placeholder="Enter username" name="username">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <input type="submit" value="Add User">
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </main>
+    
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Product Search</h1>
+
+    <input type="text" placeholder="Enter product here..." id="box">
+
+    <ul id="results">
+
+    </ul>
+
+    <script>
+        const searchInput = document.querySelector("#box");
+        const resultsList = document.querySelector("#results");
+
+        searchInput.addEventListener("keyup", async() => {
+            // get value of textbox
+            const query = searchInput.value;
+            if(query.length == 0) {
+                resultsList.innerHTML = "";
+                return;
+            }
+
+            try {
+                // API Call using fetch
+                // EncodeURIComponent - encodes special characters (%,&,:,=,/) and replace them by escape sequences
+                // for example : Escape sequence for ? is -> %3F
+                const response = await fetch(`/search?name=${encodeURIComponent(query)}`);
+                const data = await response.json();
+                console.log("Data :",data);
+
+                resultsList.innerHTML = "";
+                data.forEach(product => {
+                    console.log(product);
+                    const li = document.createElement("li");
+                    li.textContent = `${product.product_name} | ${product.product_brand}`;
+                    resultsList.appendChild(li);
+                });
+            } catch(err) {
+                console.log("ERROR ",err);
+            }
+            
+
+        });
+
+    </script>
+    
+</body>
+</html>

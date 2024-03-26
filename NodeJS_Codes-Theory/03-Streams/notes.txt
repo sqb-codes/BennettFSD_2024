@@ -1,0 +1,20 @@
+Buffer - Chunks
+
+Streams - Flow of data
+- Collection of data like array, strings
+- streams are useful for large amounts of data
+
+Why we need Streams ?
+1. Memory Efficient
+2. Time Efficient
+
+
+Types of Streams
+- Readable
+  - when we want to consume the data
+- Writable
+  - when we want to store the data
+- Duplex
+  - it is both readable and writable
+- Transform
+  - it's basically a duplex stream that can be used to modify or transform the data

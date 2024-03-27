@@ -1,0 +1,56 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+h2 {
+    padding-bottom: 15px;
+}
+
+.container {
+    width: 1300px;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+}
+
+#header {
+    background-color: lightgray;
+    border-bottom: 1px solid red;
+    padding: 15px 0px;
+    margin-bottom: 30px;
+}
+
+.logo {
+    width: 25%;
+}
+
+#main-nav {
+    width: 50%;
+}
+
+#main-nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#products-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    list-style: none;
+}
+#products-list li {
+    width: 300px;
+    padding: 20px;
+}
+
+.card {
+    border: 1px solid red;
+    padding: 20px;
+}

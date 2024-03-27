@@ -1,0 +1,25 @@
+.label-group {
+    padding: 10px 0px;
+    margin-top: 20px;
+}
+.label-group label {
+    font-size: 24px;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+.input-group input {
+    height: 40px;
+    width: 100%;
+    font-size: 20px;
+    padding: 0px 10px;
+}
+
+.button-group input {
+    width: 200px;
+    height: 40px;
+    background-color: red;
+    color: #fff;
+    border: none;
+}

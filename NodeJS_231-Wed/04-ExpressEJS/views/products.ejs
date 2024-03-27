@@ -1,0 +1,21 @@
+<%- include('includes/header.ejs')  %>
+
+<main>
+    <div class="container">
+        <h2>Featured Products</h2>
+
+        <ul id="products-list">
+            <% for (let item of products) { %>
+                <li>
+                    <div class="card">
+                        <h4><%= item.product_name %></h4>
+                        <h5><%= item.product_brand %></h5>
+                        <p>Price : <%= item.product_price %> $</p>
+                    </div>
+                    
+                </li>
+            <% } %>
+        </ul>
+    </div>
+</main>
+    

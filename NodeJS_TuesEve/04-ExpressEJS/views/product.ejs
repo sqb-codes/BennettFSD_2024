@@ -1,0 +1,17 @@
+<%- include('includes/header.ejs') %>
+
+<main id="main">
+    <div class="container">
+        <h2>All Products</h2>
+        <h3>Product Added : <%= product %></h3>
+        <ul>
+            <% for (let item of productList) { %>
+                <li>
+                    <%= item.title %>
+                </li>
+            <% } %>
+        </ul>
+    </div>
+</main>
+
+<%- include('includes/footer.ejs') %>

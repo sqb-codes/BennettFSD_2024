@@ -1,0 +1,13 @@
+<%- include('includes/header.ejs') %>
+
+<main id="main" class="form-wrapper">
+    <div class="container">
+        <h2>Add New Product</h2>
+        <form action='/product' method='POST'>
+            <input type='text' placeholder='Enter product title' name='title'/>
+            <button type='submit'>Add Product</button>
+        </form>
+    </div>
+</main>
+    
+<%- include('includes/footer.ejs') %>

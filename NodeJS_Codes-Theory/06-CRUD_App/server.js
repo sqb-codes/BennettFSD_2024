@@ -1,6 +1,3 @@
-
-
-
 const express = require("express");
 const mongoose = require("mongoose");
 const app = express();
@@ -8,7 +5,7 @@ const app = express();
 const postRouter = require("./routes/postRoutes");
 
 mongoose.connect(
-    "mongodb://root:root@localhost:27017/?authSource=admin")
+    "mongodb://127.0.0.1:27017/?directConnection=true&serverSelectionTimeoutMS=2000&appName=mongosh+2.2.2")
     .then(() => {
         console.log("MongoDB Connected...");
     })

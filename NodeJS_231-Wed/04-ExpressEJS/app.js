@@ -7,7 +7,7 @@ const bodyParser = require("body-parser");
 const indexRoutes = require("./routes/index");
 const adminRoutes = require("./routes/admin");
 const productRoutes = require("./routes/products");
-const usersRoutes = require("./routes/users");
+// const usersRoutes = require("./routes/users");
 
 const PORT = 8888;
 
@@ -21,7 +21,7 @@ app.use(bodyParser.urlencoded());
 app.use(indexRoutes);   // /
 app.use(adminRoutes);   // /add-user
 app.use(productRoutes); // /products
-app.use(usersRoutes);  //  
+// app.use(usersRoutes);  //  
 
 
 // to server static files like css, images

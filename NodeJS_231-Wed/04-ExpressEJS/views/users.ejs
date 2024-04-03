@@ -3,11 +3,17 @@
 <main id="main">
     <div class="container">
         <h2>List of Users...</h2>
-        <ul>
-            <li>
-                <%= userName %>
-            </li>
-        </ul>
+        <% if (usersList.length > 0) { %>
+            <ul>
+                <% for(let item of usersList) { %>
+                    <li>
+                        <%= item.userName %>
+                    </li>
+                <% } %>
+            </ul>
+        <% } else {%>
+            <h2>No Used Added...</h2>
+            <% } %>
     </div>
 </main>
     

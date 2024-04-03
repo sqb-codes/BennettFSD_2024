@@ -6,7 +6,11 @@ const products = [
         "product_id": "001",
         "product_name": "Wireless Bluetooth Earbuds",
         "product_brand": "SoundMasters",
-        "product_price": 49.99
+        "product_price": 49.99,
+        "product_category" : "Electronics",
+        "product_rating" : 4.5,
+        "product_count" : 20,
+        "product_img" : "URL"
     },
     {
         "product_id": "002",

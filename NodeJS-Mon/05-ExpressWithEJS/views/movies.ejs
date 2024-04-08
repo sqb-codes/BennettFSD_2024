@@ -1,0 +1,19 @@
+<%- include('includes/header.ejs') %>
+
+    <main>
+        <div class="container">
+            <h2>Recent Movies</h2>
+            <ul class="movie-list">
+                <% for(let item of movies) { %>
+                    <li>
+                        <h3>Movie Name : <%= item.name %></h3>
+                        <h3>Movie Actor : <%= item.actor %></h3>
+                        <h3>Movie Release Date : <%= item.release_date %></h3>
+                    </li>
+                <% } %>
+            </ul>
+            
+        </div>
+    </main>
+    
+<%- include('includes/footer.ejs') %>

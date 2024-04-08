@@ -1,0 +1,18 @@
+<%- include('includes/header.ejs') %>
+
+    <main>
+        <div class="container">
+            <h2>Welcome <%= user %></h2>
+            <h2>List of Users</h2>
+            <ul>
+                <% for(let user of userArray) { %>
+                    <li>
+                        <%= user.username %>
+                    </li>
+                <% } %>
+            </ul>
+            
+        </div>
+    </main>
+    
+<%- include('includes/footer.ejs') %>

@@ -1,0 +1,14 @@
+<%- include('includes/header.ejs') %>
+
+    <main>
+        <div class="container">
+            <h2>Add a new user from here..</h2>
+            <form action='/users' method='POST'>
+                <input type='text' placeholder='Enter user name' name='username'/>
+                <input type='submit'/>
+            </form>
+        </div>
+    </main>
+    
+
+<%- include('includes/footer.ejs') %>

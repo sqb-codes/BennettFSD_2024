@@ -57,3 +57,19 @@ a {
     padding-bottom: 20px;
     border-bottom: 1px solid;
 }
+
+.product-section {
+    margin-bottom: 50px;
+}
+.product-section .row {
+    flex-wrap: wrap;
+}
+.product-section .card {
+    width: 25%;
+    /* border: 1px solid; */
+    padding: 10px;
+    box-shadow: 10px 10px 10px 0px rgba(0,0,0,0.2);
+}
+.product-section .card img {
+    width: 100%;
+}

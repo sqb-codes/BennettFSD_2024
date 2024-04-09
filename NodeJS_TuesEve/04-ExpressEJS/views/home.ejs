@@ -2,8 +2,54 @@
 
 <main id="main">
     <div class="container">
-        <h2>Featured Products</h2>
+        <section id="section-1" class="product-section">
+            <h2>Electronics</h2>
+            <div class="row">
+                <% for(let item of electronics_data) { %>
+                    <div class="col card">
+                        <img src="https://demo2.wpthemego.com/themes/sw_himarket/wp-content/uploads/2016/04/1.jpg" alt="">
+                        <p>Title - <%= item.product_name %></p>
+                        <p>Price - <%= item.product_price %></p>
+                        <p>Brand - <%= item.product_brand %></p>
+                        <p>Rating - <%= item.product_rating %></p>
+                    </div>
+                <% } %>
+            </div>
+            
+        </section>
 
+        <section id="section-2" class="product-section">
+            <h2>Accessories</h2>
+            <div class="row">
+                <% for(let item of accessories_data) { %>
+                    <div class="col card">
+                        <img src="https://demo2.wpthemego.com/themes/sw_himarket/wp-content/uploads/2016/04/1.jpg" alt="">
+                        <p>Title - <%= item.product_name %></p>
+                        <p>Price - <%= item.product_price %></p>
+                        <p>Brand - <%= item.product_brand %></p>
+                        <p>Rating - <%= item.product_rating %></p>
+                    </div>
+                <% } %>
+            </div>
+            
+        </section>
+
+
+        <section id="section-3" class="product-section">
+            <h2>Apparel</h2>
+            <div class="row">
+                <% for(let item of apparel_data) { %>
+                    <div class="col card">
+                        <img src="https://demo2.wpthemego.com/themes/sw_himarket/wp-content/uploads/2016/04/1.jpg" alt="">
+                        <p>Title - <%= item.product_name %></p>
+                        <p>Price - <%= item.product_price %></p>
+                        <p>Brand - <%= item.product_brand %></p>
+                        <p>Rating - <%= item.product_rating %></p>
+                    </div>
+                <% } %>
+            </div>
+            
+        </section>
     </div>
 </main>
     

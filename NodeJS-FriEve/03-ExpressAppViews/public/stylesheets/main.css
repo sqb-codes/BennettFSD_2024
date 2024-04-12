@@ -1,0 +1,59 @@
+/* Global Settings */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Helper Classes */
+.container {
+    width: 1400px;
+    margin: 0 auto;
+}
+.row {
+    display: flex;
+}
+.align-items-center {
+    align-items: center;
+}
+.justify-space-between {
+    justify-content: space-between;
+}
+.justify-space-evenly {
+    justify-content: space-evenly;
+}
+.w-100 {
+    width: 100%;
+}
+
+/* Header */
+#header {
+    padding: 15px 0px;
+    box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.2);
+    margin-bottom: 40px;
+}
+
+#header .logo {
+    width: 20%;
+}
+
+#header ul {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#main-nav {
+    width: 50%;
+}
+
+#header .user-links {
+    width: 15%;
+}

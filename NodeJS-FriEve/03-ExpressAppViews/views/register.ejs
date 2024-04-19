@@ -1,0 +1,39 @@
+<%- include('includes/header.ejs') %>
+
+    <main id="main">
+        <div class="container">
+            <h2>Register Now</h2>
+            <form action="/" method="post">
+                <table>
+                    <tr>
+                        <td>Enter Username</td>
+                        <td>
+                            <input type="text" placeholder="Enter Username" name="username">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Enter Email ID</td>
+                        <td>
+                            <input type="email" placeholder="Enter Email ID" name="emailId">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Enter Password</td>
+                        <td>
+                            <input type="password" placeholder="Enter Password" name="pwd">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="reset">
+                        </td>
+                        <td>
+                            <input type="submit">
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </main>
+    
+<%- include('includes/footer.ejs') %>
